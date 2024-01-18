@@ -1,0 +1,81 @@
+.gradient-background {
+    background: linear-gradient(300deg, #001F3F, #0074E4, #00BFFF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .gradient-background2 {
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b, #ffe16b, #f7d45e, #f5c74c);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .navbar-background2 {
+    background: linear-gradient(to bottom,#8B4513, #A0522D, #D2B48C, #8B4513);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .navbar-background3 {
+    background: linear-gradient(to bottom, #00ffcc, #ff99cc, #9900ff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .programming-background {
+    background-image: url('./images/neon-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white; /* Adjust text color for better visibility on the background */
+            
+  }
+  .education-background {
+    background-image: url('./images/bookshelves.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255); /* Adjust text color for better visibility on the background */
+            
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.myImage {
+    border-radius: 6%;
+}
+.row {
+    margin-top: 75px;
+}
+.navbar {
+    text-align: center; /* Center the text within the navbar */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007BFF !important; 
+}
+.background1{
+  background-image: url('./images/beach-picture.jpg'); 
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  min-height: 100vh; /* Ensure the background covers the entire viewport */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+.background1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 14, 2, 0.3); /* Adjust the last value (0.5) to control the opacity */
+  z-index: -1; /* Ensure the overlay is behind other content */
+}
+.background2 {
+  color: #0074E4;
+}
